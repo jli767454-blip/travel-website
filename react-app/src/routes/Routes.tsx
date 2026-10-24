@@ -1,33 +1,27 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ExampleView from '@/views/ExampleView';
+import SiteLayout from '@/components/site/SiteLayout';
 import NotFoundView from '@/views/NotFoundView';
 import ProtectedRoute from '@/routes/ProtectedRoute';
+import ContactView from '@/views/ContactView';
+import DestinationsView from '@/views/DestinationsView';
+import AboutView from '@/views/AboutView';
+import ServicesView from '@/views/ServicesView';
 import UnauthorizedView from '@/views/UnauthorizedView';
 
-/**
- * Minimal starter route table.
- * Replace ExampleView with the app's real first route as soon as one exists.
- * ExampleView is not a style reference or product-screen layout template.
- */
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route index element={<ExampleView />} />
+        <Route element={<SiteLayout />}>
+          <Route index element={<ExampleView />} />
+          <Route path="about" element={<AboutView />} />
+          <Route path="destinations" element={<DestinationsView />} />
+          <Route path="services" element={<ServicesView />} />
+          <Route path="contact" element={<ContactView />} />
+          <Route path="*" element={<NotFoundView />} />
+        </Route>
         <Route path="/unauthorized" element={<UnauthorizedView />} />
-
-        {/**
-          Example of protecting a route:
-          <Route element={<ProtectedRoute />}>
-            <Route path="account" element={<AccountView />} />
-          </Route>
-
-          Example of restricting a route by role:
-          <Route element={<ProtectedRoute roles={[ADMIN_ROLE]} />}>
-            <Route path="admin-stuff" element={<AdminStuffView />} />
-          </Route>
-        */}
-        <Route path="*" element={<NotFoundView />} />
       </Routes>
     </Router>
   );

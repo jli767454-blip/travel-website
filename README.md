@@ -90,12 +90,18 @@ This expanded baseline gives generated apps a stronger structural vocabulary tha
 ## Implementation Index
 
 ### Frontend Views
-- `react-app/src/views/ExampleView.tsx` — placeholder welcome page that provides a calm, domain-neutral first screen.
+- `react-app/src/views/ExampleView.tsx` — bilingual public homepage with hero messaging, trust content, featured destinations, travel-style summary, and repeated contact call-to-actions for international visitors considering China travel.
+- `react-app/src/views/AboutView.tsx` — company overview page focused on service posture, operating experience, and trust-building strengths.
+- `react-app/src/views/DestinationsView.tsx` — featured destination page for Shanghai, Beijing, Chengdu, Xi’an, Chongqing, and Zhangjiajie, with explicit messaging that broader China custom routing is also available.
+- `react-app/src/views/ServicesView.tsx` — service-model page explaining that trips are tailored around traveler needs rather than sold as fixed tour products.
+- `react-app/src/views/ContactView.tsx` — public contact page showing WhatsApp, email, phone, and planning enquiry paths plus simple next-step expectations.
 - `react-app/src/views/NotFoundView.tsx` — 404 fallback view.
 - `react-app/src/views/UnauthorizedView.tsx` — fallback for authenticated users who do not have permission for a protected route.
 
 ### Frontend Components
 - `react-app/src/components/ErrorBoundary.tsx` — global error boundary.
+- `react-app/src/components/site/SiteLayout.tsx` — shared public-site shell with sticky bilingual navigation, mobile sheet menu, language switch, contact action, and footer.
+- `react-app/src/components/site/SectionShell.tsx` — reusable section wrapper that keeps public-page spacing, headings, and content width consistent.
 - `react-app/src/components/ui/button.tsx` — ShadCN button primitive for primary and secondary actions.
 - `react-app/src/components/ui/badge.tsx` — ShadCN badge primitive for compact status or labeling.
 - `react-app/src/components/ui/calendar.tsx` — ShadCN calendar primitive for richer date picking.
@@ -118,6 +124,8 @@ This expanded baseline gives generated apps a stronger structural vocabulary tha
 - `react-app/src/lib/utils.ts` — shared `cn()` helper for composing Tailwind class names.
 
 ### Frontend Stores
+- `react-app/src/i18n/LanguageProvider.tsx` — lightweight site-language context that persists the active English/Chinese choice and exposes the matching content set to all public pages.
+- `react-app/src/content/siteContent.ts` — typed bilingual content source for navigation, homepage trust blocks, destinations, service messaging, contact text, footer text, and 404 copy.
 - `react-app/src/auth/AuthStore.ts` — auth/session state backed by `SessionDto`; stores access/refresh tokens but does not perform refresh itself.
 
 ### Managers
@@ -137,6 +145,12 @@ This expanded baseline gives generated apps a stronger structural vocabulary tha
 
 ## Key Flows
 - (Document major end-to-end flows at a high level)
+
+### Public bilingual marketing site flow
+1. Visitors arrive on the public site and see a trust-first homepage that explains the company, service model, and why it is credible for China travel planning.
+2. A global language toggle switches the entire public content set between English and Chinese using a shared content source and persisted local preference.
+3. Visitors can move through About, Destinations, Travel Styles, and Contact pages from the sticky navigation on desktop or the mobile sheet menu on smaller screens.
+4. Contact prompts repeat across the homepage and inner pages so visitors can reach out by WhatsApp, email, phone, or enquiry once they are ready.
 
 ### Backend→Frontend HTTP Streaming (NDJSON)
 This StarterKit supports a ServiceInvoker streaming RPC pattern (newline-delimited JSON over `fetch()`):

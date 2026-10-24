@@ -1,5 +1,6 @@
 import ErrorBoundary from '@/components/ErrorBoundary';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { LanguageProvider } from '@/i18n/LanguageProvider';
 import Routes from '@/routes/Routes';
 
 /**
@@ -9,9 +10,11 @@ import Routes from '@/routes/Routes';
 const MainApp = () => {
   return (
     <ErrorBoundary name="App">
-      <TooltipProvider>
-        <Routes />
-      </TooltipProvider>
+      <LanguageProvider>
+        <TooltipProvider>
+          <Routes />
+        </TooltipProvider>
+      </LanguageProvider>
     </ErrorBoundary>
   );
 };
