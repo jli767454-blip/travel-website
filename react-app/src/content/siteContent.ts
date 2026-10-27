@@ -211,10 +211,10 @@ export const siteContent: Record<Language, SiteContent> = {
       intro:
         'Some visitors prefer a direct message, while others want to discuss dates and destinations first. Either way, we make the first contact step clear.',
       methods: [
-        { label: 'WhatsApp', value: '+86 138 0000 0000', href: 'https://wa.me/8613800000000' },
-        { label: 'Email', value: 'hello@chinaprivatetravel.com', href: 'mailto:hello@chinaprivatetravel.com' },
-        { label: 'Phone', value: '+86 21 4000 8000', href: 'tel:+862140008000' },
-        { label: 'Planning enquiry', value: 'Share your departure city, destinations, timing, and contact details', href: 'mailto:hello@chinaprivatetravel.com?subject=China%20Trip%20Enquiry' },
+        { label: 'WhatsApp', value: '+86 15674446660', href: 'https://wa.me/8615674446660' },
+        { label: 'Email', value: 'jli767454@gmail.com', href: 'mailto:jli767454@gmail.com' },
+        { label: 'Phone', value: '+86 15674446660', href: 'tel:+8615674446660' },
+        { label: 'Planning enquiry', value: 'Contact us at +86 15674446660 or jli767454@gmail.com to share your departure city, destinations, timing, and contact details', href: 'mailto:jli767454@gmail.com?subject=China%20Trip%20Enquiry' },
       ],
       responseTitle: 'What happens next',
       responsePoints: [
@@ -225,7 +225,7 @@ export const siteContent: Record<Language, SiteContent> = {
     },
     footer: {
       tagline: 'Custom China travel for international visitors',
-      copyright: '© 2026 China Private Travel. All rights reserved.',
+      copyright: '© 2026 万图国际旅行社. All rights reserved.',
     },
     notFound: {
       title: 'Page not found',
@@ -336,10 +336,10 @@ export const siteContent: Record<Language, SiteContent> = {
       intro:
         '有些访客希望直接发消息，有些希望先说明出发地、目的地与时间。无论哪种方式，我们都让联系入口足够清楚。',
       methods: [
-        { label: 'WhatsApp', value: '+86 138 0000 0000', href: 'https://wa.me/8613800000000' },
-        { label: '电子邮件', value: 'hello@chinaprivatetravel.com', href: 'mailto:hello@chinaprivatetravel.com' },
-        { label: '电话', value: '+86 21 4000 8000', href: 'tel:+862140008000' },
-        { label: '行程咨询', value: '可先告知出发地、目的地、出行时间与联系方式', href: 'mailto:hello@chinaprivatetravel.com?subject=%E4%B8%AD%E5%9B%BD%E6%97%85%E8%A1%8C%E5%92%A8%E8%AF%A2' },
+        { label: 'WhatsApp', value: '+86 15674446660', href: 'https://wa.me/8615674446660' },
+        { label: '电子邮件', value: 'jli767454@gmail.com', href: 'mailto:jli767454@gmail.com' },
+        { label: '电话', value: '+86 15674446660', href: 'tel:+8615674446660' },
+        { label: '行程咨询', value: '可通过 +86 15674446660 或 jli767454@gmail.com 先告知出发地、目的地、出行时间与联系方式', href: 'mailto:jli767454@gmail.com?subject=%E4%B8%AD%E5%9B%BD%E6%97%85%E8%A1%8C%E5%92%A8%E8%AF%A2' },
       ],
       responseTitle: '联系后会发生什么',
       responsePoints: [
@@ -350,7 +350,7 @@ export const siteContent: Record<Language, SiteContent> = {
     },
     footer: {
       tagline: '面向国际访客的中国定制旅行服务',
-      copyright: '© 2026 China Private Travel 版权所有',
+      copyright: '© 2026 万图国际旅行社 版权所有',
     },
     notFound: {
       title: '页面不存在',

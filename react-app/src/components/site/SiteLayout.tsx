@@ -43,7 +43,7 @@ const SiteLayout = () => {
               </div>
               <div className="min-w-0">
                 <div className="truncate text-sm font-semibold tracking-[0.18em] text-primary/80 uppercase">
-                  China Private Travel
+                  万图国际旅行社
                 </div>
                 <div className="truncate text-sm text-muted-foreground">{content.footer.tagline}</div>
               </div>
@@ -83,7 +83,7 @@ const SiteLayout = () => {
               </SheetTrigger>
               <SheetContent className="border-l border-border/70 bg-background sm:max-w-xs">
                 <SheetHeader className="pr-10">
-                  <SheetTitle>China Private Travel</SheetTitle>
+                  <SheetTitle>万图国际旅行社</SheetTitle>
                   <SheetDescription>{content.footer.tagline}</SheetDescription>
                 </SheetHeader>
                 <div className="flex flex-1 flex-col gap-2 px-4 pb-6">
@@ -120,7 +120,7 @@ const SiteLayout = () => {
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-12 sm:px-8 lg:grid-cols-[1.4fr_0.8fr] lg:px-10">
           <div className="space-y-4">
             <div className="text-sm font-semibold tracking-[0.18em] uppercase text-[color:var(--color-accent-soft)]">
-              China Private Travel
+              万图国际旅行社
             </div>
             <p className="max-w-xl text-sm leading-7 text-[color:var(--color-on-dark-muted)]">
               {content.footer.tagline}

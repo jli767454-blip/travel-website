@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ExampleView from '@/views/ExampleView';
 import SiteLayout from '@/components/site/SiteLayout';
 import NotFoundView from '@/views/NotFoundView';
-import ProtectedRoute from '@/routes/ProtectedRoute';
 import ContactView from '@/views/ContactView';
 import DestinationsView from '@/views/DestinationsView';
 import AboutView from '@/views/AboutView';
